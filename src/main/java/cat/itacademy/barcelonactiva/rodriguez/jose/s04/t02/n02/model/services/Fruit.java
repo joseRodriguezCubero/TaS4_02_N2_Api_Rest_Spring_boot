@@ -16,7 +16,7 @@ public class Fruit {
     @Column(name = "tree")
     private String tree;
 
-    @Column(name = "published")
+    @Column(name= "eatable")
     private boolean eatable;
 
     public Fruit() {
