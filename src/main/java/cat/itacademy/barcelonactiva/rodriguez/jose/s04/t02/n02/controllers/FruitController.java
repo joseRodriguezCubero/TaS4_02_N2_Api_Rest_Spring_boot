@@ -27,7 +27,7 @@ public class FruitController {
     private final FruitServices fruitServices;
 
 
-    @GetMapping(path = "/fruita/getAll*")
+    @GetMapping(path = "/fruita/getAll")
     public ResponseEntity<List<Fruit>> getAllFruits() {
         return ResponseEntity.ok().body(fruitServices.getAllFruits());
     }

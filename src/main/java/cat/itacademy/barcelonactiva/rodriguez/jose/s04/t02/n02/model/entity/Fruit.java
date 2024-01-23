@@ -22,12 +22,12 @@ public class Fruit {
     private String tree;
 
     @Setter
-    @Column(name = "published")
+    @Column(name = "eatable")
     private boolean eatable;
 
 
-    public Fruit(String title, String tree, boolean eatable) {
-        this.name = title;
+    public Fruit(String name, String tree, boolean eatable) {
+        this.name = name;
         this.tree = tree;
         this.eatable = eatable;
     }
@@ -38,7 +38,7 @@ public class Fruit {
 
     @Override
     public String toString() {
-        return "Fruit [id=" + id + ", title=" + name + ", desc=" + tree + ", eatable?=" + eatable + "]";
+        return "Fruit [id=" + id + ", name=" + name + ", tree=" + tree + ", eatable?=" + eatable + "]";
     }
 
 }
