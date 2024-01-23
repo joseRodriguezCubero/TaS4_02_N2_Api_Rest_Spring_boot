@@ -1,6 +1,6 @@
 package cat.itacademy.barcelonactiva.rodriguez.jose.s04.t02.n02.model.repository;
 
-import cat.itacademy.barcelonactiva.rodriguez.jose.s04.t02.n02.model.services.Fruit;
+import cat.itacademy.barcelonactiva.rodriguez.jose.s04.t02.n02.model.Fruit;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
