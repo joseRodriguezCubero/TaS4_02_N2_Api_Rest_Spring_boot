@@ -1,7 +1,10 @@
-package cat.itacademy.barcelonactiva.rodriguez.jose.s04.t02.n02.model;
+package cat.itacademy.barcelonactiva.rodriguez.jose.s04.t02.n02.model.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
 @Entity
 @Table(name = "fruits")
 public class Fruit {
@@ -10,18 +13,18 @@ public class Fruit {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
+    @Setter
     @Column(name = "name")
     private String name;
 
+    @Setter
     @Column(name = "tree")
     private String tree;
 
-    @Column(name= "eatable")
+    @Setter
+    @Column(name = "published")
     private boolean eatable;
 
-    public Fruit() {
-
-    }
 
     public Fruit(String title, String tree, boolean eatable) {
         this.name = title;
@@ -29,32 +32,8 @@ public class Fruit {
         this.eatable = eatable;
     }
 
-    public long getId() {
-        return id;
-    }
+    public Fruit() {
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getTree() {
-        return tree;
-    }
-
-    public void setTree(String description) {
-        this.tree = description;
-    }
-
-    public boolean isEatable() {
-        return eatable;
-    }
-
-    public void setEatable(boolean isEatable) {
-        this.eatable = isEatable;
     }
 
     @Override
